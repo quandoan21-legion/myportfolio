@@ -1,0 +1,612 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Roboto;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #2a2b34;;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#navigation-bar {
+    height: 10vh;
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a.nav-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 .75rem;
+    color: white;
+}
+
+a.nav-item.active {
+    color: #f75023;
+}
+
+a.nav-item.downloadCV {
+    padding: .5rem 2rem;
+    border: 2px solid #f75023;
+    border-radius: 2.5rem;;
+
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #f75023 50%, #f7502300 50%);
+    transition: background-position 1s;
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+}
+
+a.nav-item.downloadCV:hover {
+
+    background-position: 0 100%;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.primary-button {
+    width: 20vw;
+    height: 20vh;
+    padding: .5rem 1rem;
+    background-color: #f75023;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+}
+
+.primary-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-icon-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.social-media-icon-holder i {
+    color: white;
+}
+
+#hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://marketifythemes.net/html/dizme/img/slider/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-image {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hero-image img {
+    width: 30vw;
+}
+
+#hero-content {
+    width: 100%;
+    height: 1rem;
+    margin-top: 3rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero-hello-text {
+    color: #f75023;
+    font-size: 4vw;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+#hero-full-name {
+    color: #fff;
+    font-size: 5vw;
+    padding: 4vh 0;
+    font-weight: 700;
+}
+
+#hero-role {
+    color: #fff;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+#about-me {
+    display: flex;
+
+}
+
+.exp-item {
+    background-color: #4c4d5c;
+    display: flex;
+}
+
+.exp-item-text {
+    color: #fff;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+
+
+.exp-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 10vh 0;
+}
+
+.exp-item-numb {
+    font-size: 3rem;
+}
+
+.subtitle {
+    color: #f75023;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2vh;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.content {
+    color: #dfdfdf;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 2vw;
+}
+
+
+#process-wrapper {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.process-item {
+    flex-basis: 35%;
+    display: flex;
+    border-radius: 5vh;
+    background-color: #2a2b34;
+    border: 3px solid #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+    padding: 1%;
+}
+
+.icon-holder {
+    padding: 3%;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #f75023;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.icon-holder i {
+    color: #ffffff
+}
+
+.process-item-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.process-item-content {
+    margin-top: 0.25rem;
+    text-align: center;
+    padding: 2% 5%;
+    color: #d3d3d3;
+}
+
+#my-project-items-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.project-image{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 1rem;
+}
+
+.project-text-wrapper{
+    margin: .75rem 0;
+}
+
+.project-title{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.project-description{
+    color: #dfdfdf;
+    font-size: .75rem;
+    line-height: 1.25rem;
+}
+
+.code-skills-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.code-skill{
+    width: auto;
+    border: 2px solid #f75023;
+    padding: .5rem 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 20rem;
+}
+
+#contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info-wrapper{
+    margin: 1rem 2%;
+}
+.icon-wrapper{
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdd9d1;
+}
+
+.icon-wrapper i {
+    color: #f75023;
+}
+.contact-info-item {
+    margin: .5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.contact-info-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: .5rem 0;
+}
+
+.contact-info-text{
+    color: #cdcdcd;
+    font-size: .75rem;
+    font-weight: 300;
+}
+#contact-me-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-me-input-fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+}
+#contact-me-input-fields input {
+    flex-basis: 45%;
+    background-color: transparent;
+    border: 1px #595959 solid;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+#contact-me-input-fields input::placeholder {
+    color: white;
+    font-weight: 200;
+}
+
+#contact-me-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#contact-me-form textarea{
+    display: block;
+    flex-basis: 90%;
+    background-color: transparent;
+    border: 1px #595959 solid;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+input#send-button{
+    flex-basis: 90%;
+    background-color: #f75023;
+    color: white;
+}
+#contact-me-form textarea::placeholder {
+    color: white;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map iframe{
+    margin: 2rem 0;
+    flex-basis: 90%;
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;justify-content: center;
+    padding: 2rem 0;
+    background-color: #4c4d5c;
+}
+
+#develop-by{
+    color: white;
+    font-weight: 300;
+}
+@media only screen and (max-width: 768px) {
+    .social-media-icon-holder {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        padding: 2vh;
+    }
+
+    #navigation-bar {
+        background-color: black;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .top-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        color: white;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .top-nav a:not(:first-child) {
+        display: none;
+    }
+
+    #hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #hero-image {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #hero-image img {
+        width: 40vw;
+    }
+
+    #hero-content {
+        width: 100%;
+        height: 1rem;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-hello-text {
+        color: #f75023;
+        font-size: 4vw;
+        font-weight: 300;
+        padding-top: 1rem;
+    }
+
+    #hero-full-name {
+        color: #fff;
+        font-size: 7vw;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    #hero-role {
+        color: #fff;
+        font-weight: 200;
+        padding-bottom: 1rem;
+    }
+
+    #about-me {
+        flex-direction: column;
+        align-items: center;
+        margin: 10vh 0;
+    }
+
+    #about-me-image {
+        width: 45vw;
+    }
+
+    #exp-holder {
+
+    }
+
+    .exp-item {
+        display: none;
+    }
+
+    .exp-item-numb {
+        font-size: 2rem;
+    }
+
+    .exp-item-text {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .content {
+        line-height: 1.5rem;
+    }
+    .process-item{
+        flex-basis: 90%;
+    }
+
+    #my-project-items-wrapper{
+
+        flex-direction: column;
+    }
+    .my-project-item{
+        width: 95%;
+        height: auto;
+    }
+
+    #contact-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
