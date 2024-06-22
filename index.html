@@ -301,14 +301,25 @@
 				</div>
 			</div>
 		</div>
-		<form id="contact-me-form">
+		<form id="contact-me-form" action="#contact-me-form">
+			<div id="form-error">
+				<div id="form-error-heading">
+					Please make sure that your form input value satisfy these conditions:
+				</div>
+				<ul>
+					<li class="error-item" id="name-error">Your Name mustn't be empty</li>
+					<li class="error-item" id="email-error">Your Email mustn't be empty and must have correct format: text + "@" + domain + "." + end point</li>
+					<li class="error-item" id="phone-error">Your Phone mustn't be empty</li>
+					<li class="error-item" id="subject-error">Your Email Subject mustn't be empty</li>
+				</ul>
+			</div>
 			<div id="contact-me-input-fields">
 				<input type="text" placeholder="Your Name" name="" id="name">
 				<input type="email" placeholder="Your Email" name="" id="email">
 				<input type="number" placeholder="Your Phone" name="" id="phone">
 				<input type="text" placeholder="Subject" name="" id="subject">
 				<textarea placeholder="Write your message here"></textarea>
-				<input type="submit" id="send-button" value="Send">
+				<input type="submit" id="send-button" value="Send" onclick="validateForm()">
 			</div>
 		</form>
 	</div>
