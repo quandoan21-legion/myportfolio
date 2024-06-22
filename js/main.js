@@ -5,6 +5,7 @@ function activeNavButton(content) {
         if (aElements[i].innerText === content) {
             aElements[i].classList.add('active');
         }
+
     }
 }
 
@@ -25,6 +26,7 @@ function dropDownMenu() {
             iconElement[0].classList.add('fa-x');
 
         } else {
+            aElements[0].style.display = 'flex';
             aElements[i].style.display = 'none';
             iconElement[0].classList.remove('fa-x');
             iconElement[0].classList.add('fa-bar');
