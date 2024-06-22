@@ -57,8 +57,14 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+#fixed-nav{
+    position: relative;
+}
 
 #navigation-bar {
+    position: fixed;
+    background-color: #4c4d5c;
+    top: 0;
     height: 10vh;
     width: 100%;
     padding: .5rem;
@@ -502,6 +508,7 @@ input{
     }
 
     #navigation-bar {
+        width: 90%;
         background-color: black;
         height: auto;
         padding: 1rem;
